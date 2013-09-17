@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" ng-app="radomizerApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="css/app.css"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+  <div ng-controller="ExerciseCtrl">
+      <div ng-repeat="muscleGroup in muscleGroups">
+          <div class="checkbox">
+              <label>
+                  <input type="checkbox" ng-model="muscleGroup.state"> {{ muscleGroup.group }} - {{ muscleGroup.state }}
+              </label>
+          </div>
+      </div>
+      <button ng-click="getExercises()" class="btn btn-primary">randomize this sh*t!</button>
+      <button ng-click="filterExercises()" class="btn btn-success">filter this sh*t!</button>
+      <div ng-repeat="exercise in exerciseList | filter:isSelected">
+          <span>{{exercise.exerciseName}}</span>
+          <span>{{exercise.beginner}}</span>
+          <span>{{exercise.medium}}</span>
+          <span>{{exercise.hard}}</span>
+      </div>
+  </div>
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
