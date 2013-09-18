@@ -5,6 +5,7 @@
 app.controller('ExerciseCtrl', function($scope, $http)
 {
         $scope.selectedMuscleGroups = [{}];
+        $scope.loadedExercises = [];
         $scope.exerciseList = [];
         $scope.muscleGroups = [ {group:"chest", state: false},
                                 {group:"back", state: false},
@@ -18,28 +19,42 @@ app.controller('ExerciseCtrl', function($scope, $http)
                                 {group:"calves", state: false},
                                 {group:"traps", state: false}]
 
-        $scope.getExercises = function()
-        {
+//        $scope.getExercises = function()
+//        {
             $http.get('data/data.json')
             .success
             (
                  function(data, status, headers, config)
                  {
-                    $scope.exerciseList = data;
-                    //alert("foo: " + $scope.exerciseList);
+                    $scope.loadedExercises = data;
+                    console.log("foo: " + $scope.loadedExercises);
                  }
             ).error
             (
                  function(data, status, headers, config)
                  {
-                    alert( "Error: " + data.responseText + "\n" + status );
+                    console.log( "Error: " + data.responseText + "\n" + status );
                  }
-             );
-        }
+             )
+//        }
 
         $scope.filterExercises = function()
         {
+            $scope.exerciseList = [];
+            console.clear();
+            angular.forEach($scope.loadedExercises, function(value, key)
+            {
+                if($scope.isSelected(value))
+                {
+                    console.log(value);
+                    $scope.exerciseList.push(value);
+                }
+            }
+            )
+        }
 
+        $scope.random = function() {
+            return 0.5 - Math.random();
         }
 
         $scope.isSelected = function(muscleGroup)

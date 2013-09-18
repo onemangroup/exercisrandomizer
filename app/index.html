@@ -13,13 +13,13 @@
       <div ng-repeat="muscleGroup in muscleGroups">
           <div class="checkbox">
               <label>
-                  <input type="checkbox" ng-model="muscleGroup.state"> {{ muscleGroup.group }} - {{ muscleGroup.state }}
+                  <input type="checkbox" ng-click="filterExercises()" ng-model="muscleGroup.state"> {{ muscleGroup.group }} - {{ muscleGroup.state }}
               </label>
           </div>
       </div>
-      <button ng-click="getExercises()" class="btn btn-primary">randomize this sh*t!</button>
-      <button ng-click="filterExercises()" class="btn btn-success">filter this sh*t!</button>
-      <div ng-repeat="exercise in exerciseList | filter:isSelected">
+      <!--button ng-click="getExercises()" class="btn btn-primary">load this sh*t!</button-->
+      <button ng-click="filterExercises()" class="btn btn-success">randomize this sh*t!</button>
+      <div ng-repeat="exercise in exerciseList | orderBy:random">
           <span>{{exercise.exerciseName}}</span>
           <span>{{exercise.beginner}}</span>
           <span>{{exercise.medium}}</span>
