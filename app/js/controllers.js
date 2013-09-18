@@ -1,6 +1,10 @@
 'use strict';
 
 /* Controllers */
+/* Author: Mark Streichan
+   Username: onemangroup
+   Date: 17.09.2013
+ */
 
 app.controller('ExerciseCtrl', function($scope, $http)
 {
