@@ -58,11 +58,6 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter)
             shuffle($scope.exerciseList);
         }
 
-        $scope.setLevel = function()
-        {
-           console.log("setLevel");
-        }
-
         $scope.random = function() {
             return 0.5 - Math.random();
         }
@@ -88,7 +83,7 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter)
             $scope.isTrue = false;
             angular.forEach($scope.muscleGroups, function(value, key)
             {
-                if((value.state == true && muscleGroup[value.group] == "x"))
+                if(value.state == true && muscleGroup[value.group] == "x" && muscleGroup[$scope.level] == "x")
                 {
                     $scope.isTrue = true;
                 }

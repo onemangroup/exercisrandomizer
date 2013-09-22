@@ -58,10 +58,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="60" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.46875">
+            <state line="30" column="52" selection-start="1520" selection-end="1520" vertical-scroll-proportion="-14.958333">
               <folding />
             </state>
           </provider>
@@ -70,16 +70,16 @@
       <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="40" selection-start="2300" selection-end="2300" vertical-scroll-proportion="0.0">
+            <state line="59" column="0" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.json" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="data.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/data/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="919" column="1" selection-start="20049" selection-end="20049" vertical-scroll-proportion="0.0">
+            <state line="919" column="1" selection-start="20049" selection-end="20049" vertical-scroll-proportion="0.9587912">
               <folding />
             </state>
           </provider>
@@ -116,9 +116,9 @@
         <option value="$PROJECT_DIR$/app/js/directives.js" />
         <option value="$PROJECT_DIR$/app/js/app.js" />
         <option value="$PROJECT_DIR$/app/css/app.css" />
-        <option value="$PROJECT_DIR$/app/data/data.json" />
         <option value="$PROJECT_DIR$/app/js/controllers.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/data/data.json" />
       </list>
     </option>
   </component>
@@ -562,23 +562,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/data/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="919" column="1" selection-start="20049" selection-end="20049" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="40" selection-start="2300" selection-end="2300" vertical-scroll-proportion="0.0">
+        <state line="59" column="0" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="60" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.46875">
+        <state line="30" column="52" selection-start="1520" selection-end="1520" vertical-scroll-proportion="-14.958333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/data/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="919" column="1" selection-start="20049" selection-end="20049" vertical-scroll-proportion="0.9587912">
           <folding />
         </state>
       </provider>

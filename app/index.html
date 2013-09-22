@@ -12,7 +12,7 @@
   <div class="container" ng-controller="ExerciseCtrl">
       <div class="row hidden-print" data-toggle="buttons">
           <label ng-repeat="l in levels" class="btn btn-warning col-md-12 col-xs-12" ng-class="radioButtonState(l)">
-              <input type="radio" ng-model="$parent.level" value="{{ l.level }}" ng-click="setLevel()"> {{ l.label }}
+              <input type="radio" ng-model="$parent.level" value="{{ l.level }}" ng-click="filterExercises()"> {{ l.label }}
           </label>
       </div>
 
@@ -29,9 +29,6 @@
       <div class="row">
         <div ng-repeat="exercise in exerciseList | limitTo:8" class="col-md-12">
               <span>{{exercise.exercisename}}</span>
-              <span>{{exercise.beginner}}</span>
-              <span>{{exercise.medium}}</span>
-              <span>{{exercise.hard}}</span>
         </div>
       </div>
   </div>
