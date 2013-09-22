@@ -1,32 +1,40 @@
 <!doctype html>
 <html lang="en" ng-app="radomizerApp">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Street Workout NRW - Training Routine Generator v0.1</title>
-  <link rel="stylesheet" href="css/app.css"/>
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Workout NRW - Training Routine Generator v0.1</title>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
 </head>
 <body>
 
-  <div ng-controller="ExerciseCtrl">
-      <div ng-repeat="muscleGroup in muscleGroups">
-          <div class="checkbox">
-              <label>
-                  <input type="checkbox" ng-click="filterExercises()" ng-model="muscleGroup.state"> {{ muscleGroup.group }} - {{ muscleGroup.state }}
-              </label>
-          </div>
+  <div class="container" ng-controller="ExerciseCtrl">
+      <div class="row hidden-print" data-toggle="buttons">
+          <label ng-repeat="l in levels" class="btn btn-warning col-md-12 col-xs-12" ng-class="radioButtonState(l)">
+              <input type="radio" ng-model="$parent.level" value="{{ l.level }}" ng-click="setLevel()"> {{ l.label }}
+          </label>
+      </div>
+
+      <div class="row hidden-print" data-toggle="buttons">
+          <label class="btn btn-primary col-md-12 col-xs-12" ng-class="checkboxState(muscleGroup)" ng-repeat="muscleGroup in muscleGroups">
+              <input type="checkbox" ng-click="filterExercises()" ng-model="muscleGroup.state"> {{ muscleGroup.label }}
+          </label>
       </div>
       <!--button ng-click="getExercises()" class="btn btn-primary">load this sh*t!</button-->
-      <button ng-click="filterExercises()" class="btn btn-success">randomize this sh*t!</button>
-      <div ng-repeat="exercise in exerciseList | orderBy:random">
-          <span>{{exercise.exerciseName}}</span>
-          <span>{{exercise.beginner}}</span>
-          <span>{{exercise.medium}}</span>
-          <span>{{exercise.hard}}</span>
+      <div class="row hidden-print">
+          <button ng-click="filterExercises()" class="btn btn-success col-md-3">randomize this sh*t!</button>
+      </div>
+
+      <div class="row">
+        <div ng-repeat="exercise in exerciseList | limitTo:8" class="col-md-12">
+              <span>{{exercise.exercisename}}</span>
+              <span>{{exercise.beginner}}</span>
+              <span>{{exercise.medium}}</span>
+              <span>{{exercise.hard}}</span>
+        </div>
       </div>
   </div>
-
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
@@ -37,6 +45,6 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
 </html>

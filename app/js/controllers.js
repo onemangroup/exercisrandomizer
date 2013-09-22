@@ -6,59 +6,81 @@
    Date: 17.09.2013
  */
 
-app.controller('ExerciseCtrl', function($scope, $http)
+app.controller('ExerciseCtrl', function($scope, $http, orderByFilter)
 {
-        $scope.selectedMuscleGroups = [{}];
         $scope.loadedExercises = [];
         $scope.exerciseList = [];
-        $scope.muscleGroups = [ {group:"chest", state: false},
-                                {group:"back", state: false},
-                                {group:"biceps", state: false},
-                                {group:"triceps", state: false},
-                                {group:"shoulders", state: false},
-                                {group:"forearm", state: false},
-                                {group:"abs", state: false},
-                                {group:"upperleg", state: false},
-                                {group:"glutes", state: false},
-                                {group:"calves", state: false},
-                                {group:"traps", state: false}]
+        $scope.levels = [{level: "beginner", label: "Anfänger", range:"1-5"},
+                        {level: "medium", label: "Fortgeschrittene", range:"6-12"},
+                        {level: "hard", label: "Profi", range:"13-20"}
+                       ];
+        $scope.level = "beginner";
+        $scope.muscleGroups = [ {group:"chest", label: "Brust", state: false},
+                                {group:"back", label: "Rücken", state: false},
+                                {group:"biceps", label: "Bizeps", state: false},
+                                {group:"triceps", label: "Trizeps", state: false},
+                                {group:"shoulders", label: "Schulter", state: false},
+                                {group:"forearm", label: "Unterarm", state: false},
+                                {group:"abs", label: "Bauch / Core", state: false},
+                                {group:"upperleg", label: "Oberschenkel", state: false},
+                                {group:"glutes", label: "Pobacken", state: false},
+                                {group:"calves", label: "Waden", state: false},
+                                {group:"traps", label: "Nacken", state: false}]
 
-//        $scope.getExercises = function()
-//        {
-            $http.get('data/data.json')
-            .success
-            (
-                 function(data, status, headers, config)
-                 {
-                    $scope.loadedExercises = data;
-                    console.log("foo: " + $scope.loadedExercises);
-                 }
-            ).error
-            (
-                 function(data, status, headers, config)
-                 {
-                    console.log( "Error: " + data.responseText + "\n" + status );
-                 }
-             )
-//        }
+        $http.get('data/data.json')
+        .success
+        (
+             function(data, status, headers, config)
+             {
+                $scope.loadedExercises = data;
+             }
+        ).error
+        (
+             function(data, status, headers, config)
+             {
+                console.log( "Error: " + data.responseText + "\n" + status );
+             }
+        )
 
         $scope.filterExercises = function()
         {
             $scope.exerciseList = [];
-            console.clear();
+//            console.clear();
             angular.forEach($scope.loadedExercises, function(value, key)
             {
                 if($scope.isSelected(value))
                 {
-                    console.log(value);
+//                    console.log(value);
                     $scope.exerciseList.push(value);
                 }
             }
             )
+            shuffle($scope.exerciseList);
+        }
+
+        $scope.setLevel = function()
+        {
+           console.log("setLevel");
         }
 
         $scope.random = function() {
             return 0.5 - Math.random();
+        }
+
+        $scope.radioButtonState = function(item)
+        {
+            if(item.level == $scope.level)
+            {
+                return "active";
+            }
+        }
+
+        $scope.checkboxState = function(item)
+        {
+            if(item.state )
+            {
+                return "active";
+            }
         }
 
         $scope.isSelected = function(muscleGroup)
@@ -70,12 +92,15 @@ app.controller('ExerciseCtrl', function($scope, $http)
                 {
                     $scope.isTrue = true;
                 }
-//                else if((value.state == true && muscleGroup[value.group] == "-"))
-//                {
-//                    $scope.isTrue = false;
-//                }
             }
             )
             return $scope.isTrue;
         }
 })
+
+
+var shuffle = function(o) {
+    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+
+    return o;
+};
