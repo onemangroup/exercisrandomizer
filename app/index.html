@@ -4,12 +4,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Street Workout NRW - Training Routine Generator v0.1</title>
-    <link rel="stylesheet" href="css/app.css"/>
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="css/social-buttons.css" rel="stylesheet" media="screen" />
+    <link href="css/font-awesome.css"rel="stylesheet" media="screen" />
 </head>
 <body>
+ <script type="text/javascript">
+    // You probably don't want to use globals, but this is just example code
+    var fbAppId = '691726554190169';
+    var objectToLike = 'https://apps.facebook.com/workoutgenerator/';
 
+    // This check is just here to make sure you set your app ID. You don't
+    // need to use it in production.
+    if (fbAppId === 'replace me') {
+        alert('Please set the fbAppId in the sample.');
+    }
+
+    // This is boilerplate code that is used to initialize the Facebook
+    // JS SDK.  You would normally set your App ID in this code.
+
+    // Additional JS functions here
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : fbAppId,        // App ID
+            channelUrl : '//www.grenz-schutz.de/index.html',
+            status     : true,           // check login status
+            cookie     : true,           // enable cookies to allow the server to access the session
+            xfbml      : true            // parse page for xfbml or html5 social plugins like login button below
+        });
+    };
+
+
+    // Load the SDK Asynchronously
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+  </script>
   <div class="container" ng-controller="ExerciseCtrl">
+
+
+      <image src="img/logo.jpg" />
       <div class="row hidden-print" data-toggle="buttons">
           <label ng-repeat="l in levels" class="btn btn-warning col-md-12 col-xs-12" ng-class="radioButtonState(l)">
               <input type="radio" ng-model="$parent.level" value="{{ l.level }}" ng-click="filterExercises()"> {{ l.label }}
@@ -24,13 +64,26 @@
       <!--button ng-click="getExercises()" class="btn btn-primary">load this sh*t!</button-->
       <div class="row hidden-print">
           <button ng-click="filterExercises()" class="btn btn-success col-md-3">randomize this sh*t!</button>
+          <button class="btn btn-facebook" ng-click="postWorkout();" disabled="{{ buttonState }}"><i class="icon-facebook"></i> | Share your Workout</button>
       </div>
 
       <div class="row">
-        <div ng-repeat="exercise in exerciseList | limitTo:8" class="col-md-12">
-              <span>{{exercise.exercisename}}</span>
+          <div ng-repeat="exercise in exerciseList | limitTo:8" class="col-md-12">
+            <span>{{exercise.exercisename}}</span>
         </div>
       </div>
+
+      <div
+              class="fb-login-button"
+              data-show-faces="true"
+              data-width="200"
+              data-max-rows="1"
+              data-scope="publish_actions">
+      </div>
+
+      <div id="fb-root"></div>
+      <div id="result"></div>
+
   </div>
 
   <!-- In production use:
@@ -43,5 +96,6 @@
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/facebook.js"></script>
 </body>
 </html>

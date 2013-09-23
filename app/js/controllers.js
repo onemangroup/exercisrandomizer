@@ -6,12 +6,13 @@
    Date: 17.09.2013
  */
 
-app.controller('ExerciseCtrl', function($scope, $http, orderByFilter)
+app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookService, Facebook)
 {
         $scope.loadedExercises = [];
         $scope.exerciseList = [];
+        $scope.buttonState = "";
         $scope.levels = [{level: "beginner", label: "Anfänger", range:"1-5"},
-                        {level: "medium", label: "Fortgeschrittene", range:"6-12"},
+                        {level: "medium", label: "Fortgeschrittener", range:"6-12"},
                         {level: "hard", label: "Profi", range:"13-20"}
                        ];
         $scope.level = "beginner";
@@ -50,12 +51,60 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter)
             {
                 if($scope.isSelected(value))
                 {
-//                    console.log(value);
-                    $scope.exerciseList.push(value);
+                    $scope.exerciseList.push({exercisename: value.exercisename, reps: $scope.getRangeForLevel()});
                 }
             }
             )
             shuffle($scope.exerciseList);
+            if($scope.exerciseList.length > 8){
+                $scope.exerciseList.splice(7, $scope.exerciseList.length - 8);
+            }
+
+
+        }
+
+
+
+
+        /**
+         * Watch for Facebook to be ready.
+         * There's also the event that could be used
+         */
+        $scope.$watch(
+            function() {
+                return Facebook.isReady();
+            },
+            function(newVal) {
+                if (newVal)
+                    $scope.facebookReady = true;
+            }
+        );
+
+        $scope.postWorkout = function()
+        {
+            $scope.buttonState = "disabled";
+            var promise = FacebookService.getUser();
+            promise.then(function(success) {
+                FacebookService.postStory($scope.exerciseList).then(function(s){
+                    $scope.buttonState = "";
+                })
+//                console.log(success);
+            }, function(error) {
+//                console.log(error);
+            }, function(update) {
+//                console.log(update);
+            });
+        }
+
+        $scope.getRangeForLevel = function(){
+            var range = "foo";
+
+            angular.forEach($scope.levels, function(value, key){
+                if(value.level == $scope.level){
+                    range = value.range;
+                }
+            })
+            return range;
         }
 
         $scope.random = function() {
@@ -91,6 +140,7 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter)
             )
             return $scope.isTrue;
         }
+
 })
 
 
