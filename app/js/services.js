@@ -44,15 +44,17 @@ app.service('FacebookService', function($q, $rootScope, $http, $window, $documen
                     if(data != 0)
                     {
                         var params = {};
+                        params['method'] = 'feed';
                         params['message'] = 'Thats my workout for today - No Games, Just Pull Ups!';
                         params['name'] = 'Workout Generator';
                         params['description'] = 'No Games, Just Pull Ups!';
-                        params['link'] = 'https://apps.facebook.com/workoutgenerator/?id=' + data;
+                        params['link'] = 'https://apps.facebook.com/workoutgenerator/#/show/' + data;
                         params['picture'] = 'http://grenz-schutz.de/img/thumb_116x116.jpg';
                         params['caption'] = 'Workout Generator - Street Workout Duesseldorf';
                         params['privacy'] = {'value':'SELF'};
 
-                        Facebook.api('/me/feed', 'post', params, function(response) {
+
+                        FB.ui(params, function(response){
                             if (!response || response.error) {
                                 console.log("Fehler");
                                 console.log(response);

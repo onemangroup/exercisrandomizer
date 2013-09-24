@@ -61,7 +61,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="93" selection-start="3048" selection-end="3059" vertical-scroll-proportion="-16.25">
+            <state line="49" column="8" selection-start="1981" selection-end="1981" vertical-scroll-proportion="-15.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="49" selection-start="881" selection-end="881" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -76,28 +85,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DB.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/php/DB.class.php">
+      <file leaf-file-name="ExerciseCtrl.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/js/ExerciseCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="3" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+            <state line="151" column="54" selection-start="5050" selection-end="5050" vertical-scroll-proportion="0.8557692">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="font-awesome.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/css/font-awesome.css">
+      <file leaf-file-name="ExerciseDetailCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/ExerciseDetailCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="749" column="1" selection-start="15727" selection-end="15745" vertical-scroll-proportion="-8.807693">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="42" selection-start="3216" selection-end="3216" vertical-scroll-proportion="0.43269232">
+            <state line="2" column="21" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,7 +106,25 @@
       <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="20" selection-start="2886" selection-end="2886" vertical-scroll-proportion="0.0">
+            <state line="50" column="92" selection-start="1987" selection-end="1987" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generate.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/partials/generate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="38" selection-start="1304" selection-end="1304" vertical-scroll-proportion="-15.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/partials/show.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="4" selection-start="25" selection-end="25" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -122,23 +140,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/js/directives.js" />
         <option value="$PROJECT_DIR$/app/css/app.css" />
         <option value="$PROJECT_DIR$/app/data/data.json" />
         <option value="$PROJECT_DIR$/app/php/DB.class.php" />
         <option value="$PROJECT_DIR$/app/php/dbconfig.php" />
         <option value="$PROJECT_DIR$/app/js/wp-config.php" />
         <option value="$PROJECT_DIR$/app/js/facebook.js" />
-        <option value="$PROJECT_DIR$/app/js/app.js" />
         <option value="$PROJECT_DIR$/app/php/dbService.php" />
+        <option value="$PROJECT_DIR$/app/js/app.js" />
         <option value="$PROJECT_DIR$/app/js/services.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/js/controllers.js" />
+        <option value="$PROJECT_DIR$/app/partials/show.html" />
+        <option value="$PROJECT_DIR$/app/js/filters.js" />
+        <option value="$PROJECT_DIR$/app/js/ExerciseDetailCtrl.js" />
+        <option value="$PROJECT_DIR$/app/partials/generate.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/js/ExerciseCtrl.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="874" />
@@ -340,6 +363,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -498,7 +522,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <frame x="-1" y="22" width="1440" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -577,41 +601,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/ECMAScript.js2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="25" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.33286715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.020604396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="749" column="1" selection-start="15727" selection-end="15745" vertical-scroll-proportion="-8.807693">
@@ -642,20 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="95" selection-start="180" selection-end="180" vertical-scroll-proportion="0.20604396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/data/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="5" selection-start="0" selection-end="3176" vertical-scroll-proportion="0.75274724">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/php/DB.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="3" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
@@ -670,23 +645,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="49" selection-start="881" selection-end="881" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="20" selection-start="2886" selection-end="2886" vertical-scroll-proportion="0.0">
+        <state line="50" column="92" selection-start="1987" selection-end="1987" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="25" selection-end="25" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/filters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.061813187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/ExerciseDetailCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="21" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/data/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="41" selection-start="2661" selection-end="2661" vertical-scroll-proportion="2.4725275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/ECMAScript.js2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="13" selection-start="5672" selection-end="5672" vertical-scroll-proportion="-0.25454545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/generate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="1304" selection-end="1304" vertical-scroll-proportion="-15.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="93" selection-start="3048" selection-end="3059" vertical-scroll-proportion="-16.25">
+        <state line="49" column="8" selection-start="1981" selection-end="1981" vertical-scroll-proportion="-15.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/app/js/ExerciseCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="42" selection-start="3216" selection-end="3216" vertical-scroll-proportion="0.43269232">
+        <state line="151" column="54" selection-start="5050" selection-end="5050" vertical-scroll-proportion="0.8557692">
           <folding />
         </state>
       </provider>

@@ -23,6 +23,13 @@ app.config([
     }
 ])
 
+app.config(['$routeProvider', function($routeProvider) {
+    $routeProvider.
+        when('/generate', {templateUrl: 'partials/generate.html',   controller: 'ExerciseCtrl'}).
+        when('/show/:id', {templateUrl: 'partials/show.html', controller: 'ExerciseDetailCtrl'}).
+        otherwise({redirectTo: '/generate'});
+}]);
+
 
 // Declare app level module which depends on filters, and services
 

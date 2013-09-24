@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Street Workout NRW - Training Routine Generator v0.1</title>
+    <title>Street Workout NRW - Workout Routine Generator v0.1</title>
     <link href="css/app.css" rel="stylesheet" />
     <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
     <link href="css/social-buttons.css" rel="stylesheet" media="screen" />
@@ -45,57 +45,25 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-  </script>
-  <div class="container" ng-controller="ExerciseCtrl">
+</script>
+    <div class="container">
+        <image src="img/logo.jpg" />
+    </div>
+    <div ng-view></div>
 
 
-      <image src="img/logo.jpg" />
-      <div class="row hidden-print" data-toggle="buttons">
-          <label ng-repeat="l in levels" class="btn btn-warning col-md-12 col-xs-12" ng-class="radioButtonState(l)">
-              <input type="radio" ng-model="$parent.level" value="{{ l.level }}" ng-click="filterExercises()"> {{ l.label }}
-          </label>
-      </div>
 
-      <div class="row hidden-print" data-toggle="buttons">
-          <label class="btn btn-primary col-md-12 col-xs-12" ng-class="checkboxState(muscleGroup)" ng-repeat="muscleGroup in muscleGroups">
-              <input type="checkbox" ng-click="filterExercises()" ng-model="muscleGroup.state"> {{ muscleGroup.label }}
-          </label>
-      </div>
-      <!--button ng-click="getExercises()" class="btn btn-primary">load this sh*t!</button-->
-      <div class="row hidden-print">
-          <button ng-click="filterExercises()" class="btn btn-success col-md-3">randomize this sh*t!</button>
-          <button class="btn btn-facebook" ng-click="postWorkout();" disabled="{{ buttonState }}"><i class="icon-facebook"></i> | Share your Workout</button>
-      </div>
-
-      <div class="row">
-          <div ng-repeat="exercise in exerciseList | limitTo:8" class="col-md-12">
-            <span>{{exercise.exercisename}}</span>
-        </div>
-      </div>
-
-      <div
-              class="fb-login-button"
-              data-show-faces="true"
-              data-width="200"
-              data-max-rows="1"
-              data-scope="publish_actions">
-      </div>
-
-      <div id="fb-root"></div>
-      <div id="result"></div>
-
-  </div>
-
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  -->
-  <script src="lib/angular/angular.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/facebook.js"></script>
+    <!-- In production use:
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/ExerciseCtrl.js"></script>
+    <script src="js/ExerciseDetailCtrl.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/facebook.js"></script>
 </body>
 </html>

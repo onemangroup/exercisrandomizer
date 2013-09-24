@@ -1,6 +1,6 @@
 'use strict';
 
-/* Controllers */
+/* ExerciseCtrl */
 /* Author: Mark Streichan
    Username: onemangroup
    Date: 17.09.2013
@@ -11,7 +11,7 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
         $scope.loadedExercises = [];
         $scope.exerciseList = [];
         $scope.buttonState = "";
-        $scope.levels = [{level: "beginner", label: "Anfänger", range:"1-5"},
+        $scope.levels = [{level: "beginner", label: "Anfänger", range:"3-5"},
                         {level: "medium", label: "Fortgeschrittener", range:"6-12"},
                         {level: "hard", label: "Profi", range:"13-20"}
                        ];
@@ -51,20 +51,15 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
             {
                 if($scope.isSelected(value))
                 {
-                    $scope.exerciseList.push({exercisename: value.exercisename, reps: $scope.getRangeForLevel()});
+                    var range = $scope.getRangeForLevel().split("-");
+                    var rep = getRandomArbitrary(Number(range[0]), Number(range[1]));
+                    console.log(range);
+                    $scope.exerciseList.push({exercisename: value.exercisename, reps: rep});
                 }
             }
             )
             shuffle($scope.exerciseList);
-            if($scope.exerciseList.length > 8){
-                $scope.exerciseList.splice(7, $scope.exerciseList.length - 8);
-            }
-
-
         }
-
-
-
 
         /**
          * Watch for Facebook to be ready.
@@ -85,7 +80,11 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
             $scope.buttonState = "disabled";
             var promise = FacebookService.getUser();
             promise.then(function(success) {
-                FacebookService.postStory($scope.exerciseList).then(function(s){
+                var postList = $scope.exerciseList;
+                if(postList.length > 8){
+                    postList.splice(7, postList.length - 8);
+                }
+                FacebookService.postStory(postList).then(function(s){
                     $scope.buttonState = "";
                 })
 //                console.log(success);
@@ -143,9 +142,12 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
 
 })
 
-
 var shuffle = function(o) {
     for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 
     return o;
 };
+
+function getRandomArbitrary(min, max) {
+    return Math.floor((Math.random() * (max - min + 1)) + min);
+}
