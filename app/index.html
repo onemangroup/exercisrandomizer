@@ -47,7 +47,21 @@
 
 </script>
     <div class="container">
-        <image src="img/logo.jpg" />
+        <div class="row">
+            <image class="col-md-4 col-xs-4" src="img/logo.jpg" />
+            <div>
+                <div><h3>Support Us!</h3></div>
+                <div class="btn-group col-lg-8">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <a href="http://street-workout-nrw.spreadshirt.de/" target="_blank"><img src="http://cache.spreadshirt.net/Public/Common/images/logo_landscape.png" /></a>
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="2CHTK9X8FM6F2">
+                        <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <div ng-view></div>
 

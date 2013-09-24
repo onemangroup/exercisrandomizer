@@ -45,6 +45,12 @@ app.service('FacebookService', function($q, $rootScope, $http, $window, $documen
                     {
                         var params = {};
                         params['method'] = 'feed';
+                        if($window.name == "iframe_canvas_fb_https")
+                        {
+                            params['display'] = 'async';
+                        }else{
+                            params['display'] = 'iframe';
+                        }
                         params['message'] = 'Thats my workout for today - No Games, Just Pull Ups!';
                         params['name'] = 'Workout Generator';
                         params['description'] = 'No Games, Just Pull Ups!';
@@ -57,7 +63,9 @@ app.service('FacebookService', function($q, $rootScope, $http, $window, $documen
                         FB.ui(params, function(response){
                             if (!response || response.error) {
                                 console.log("Fehler");
-                                console.log(response);
+                                $rootScope.$apply(function(){
+                                    d.reject(response);
+                                })
                             } else {
                                 console.log('Published to stream - you might want to delete it now!');
                                 $rootScope.$apply(function(){

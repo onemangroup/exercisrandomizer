@@ -8,9 +8,17 @@
 
 app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookService, Facebook)
 {
+
+        $scope.disablePostButton = function(){
+            $scope.buttonState = "disabled";
+        }
+
+        $scope.enablePostButton = function(){
+            $scope.buttonState = "";
+        }
+        $scope.disablePostButton();
         $scope.loadedExercises = [];
         $scope.exerciseList = [];
-        $scope.buttonState = "";
         $scope.levels = [{level: "beginner", label: "Anfänger", range:"3-5"},
                         {level: "medium", label: "Fortgeschrittener", range:"6-12"},
                         {level: "hard", label: "Profi", range:"13-20"}
@@ -58,7 +66,15 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
                 }
             }
             )
-            shuffle($scope.exerciseList);
+            if($scope.exerciseList.length > 0)
+            {
+                $scope.buttonState = "";
+                shuffle($scope.exerciseList);
+            }else
+            {
+                $scope.disablePostButton();
+            }
+
         }
 
         /**
@@ -77,7 +93,7 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
 
         $scope.postWorkout = function()
         {
-            $scope.buttonState = "disabled";
+            $scope.disablePostButton();
             var promise = FacebookService.getUser();
             promise.then(function(success) {
                 var postList = $scope.exerciseList;
@@ -85,18 +101,22 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
                     postList.splice(7, postList.length - 8);
                 }
                 FacebookService.postStory(postList).then(function(s){
-                    $scope.buttonState = "";
-                })
+                    $scope.enablePostButton();
+                }, function(e){
+                    $scope.enablePostButton();
+                }, function(u){
+                    $scope.enablePostButton();
+                });
 //                console.log(success);
             }, function(error) {
-//                console.log(error);
+
             }, function(update) {
 //                console.log(update);
             });
         }
 
         $scope.getRangeForLevel = function(){
-            var range = "foo";
+            var range = "";
 
             angular.forEach($scope.levels, function(value, key){
                 if(value.level == $scope.level){
@@ -139,7 +159,6 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
             )
             return $scope.isTrue;
         }
-
 })
 
 var shuffle = function(o) {
