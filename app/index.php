@@ -45,7 +45,11 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
+
+
+    //window.location.href = 'https://ssl.webpack.de/grenz-schutz.de/#/show/' + i;
 </script>
+
     <div class="container">
         <div class="row">
             <image class="col-md-4 col-xs-4" src="img/logo.jpg" />
@@ -65,7 +69,17 @@
     </div>
     <div ng-view></div>
 
-
+    <div ng-controller="AppCtrl">
+        <script type="text/javascript">
+            <?php
+            if(isset($_GET['sk']))
+            {
+                $v = explode('/', $_GET['sk']);
+                echo 'var i =' . $v[1] . ";";
+            }
+            ?>
+        </script>
+    </div>
 
     <!-- In production use:
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
@@ -73,11 +87,22 @@
     <script src="lib/angular/angular.js"></script>
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
+    <script src="js/AppCtrl.js"></script>
     <script src="js/ExerciseCtrl.js"></script>
     <script src="js/ExerciseDetailCtrl.js"></script>
     <script src="js/filters.js"></script>
     <script src="js/directives.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/facebook.js"></script>
+ <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-44326228-1', 'webpack.de');
+     ga('send', 'pageview');
+
+ </script>
 </body>
 </html>
