@@ -6,8 +6,10 @@
    Date: 17.09.2013
  */
 
-app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookService, Facebook)
+app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookService, Facebook, $location, $routeParams, $window, $document)
 {
+        $scope.$watch($routeParams, function() {
+        }, true);
 
         $scope.disablePostButton = function(){
             $scope.buttonState = "disabled";
@@ -61,7 +63,6 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
                 {
                     var range = $scope.getRangeForLevel().split("-");
                     var rep = getRandomArbitrary(Number(range[0]), Number(range[1]));
-                    console.log(range);
                     $scope.exerciseList.push({exercisename: value.exercisename, reps: rep});
                 }
             }
@@ -96,22 +97,32 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
             $scope.disablePostButton();
             var promise = FacebookService.getUser();
             promise.then(function(success) {
+                console.log(success);
                 var postList = $scope.exerciseList;
                 if(postList.length > 8){
                     postList.splice(7, postList.length - 8);
                 }
-                FacebookService.postStory(postList).then(function(s){
+                var p2 = FacebookService.postStory(postList)
+                p2.then(function(s){
                     $scope.enablePostButton();
                 }, function(e){
                     $scope.enablePostButton();
                 }, function(u){
                     $scope.enablePostButton();
                 });
-//                console.log(success);
             }, function(error) {
+                var p3 = FacebookService.loginUser();
+                p3.then(function(success){
+                    console.log("login successful");
+                    $scope.enablePostButton();
+                }, function(error){
+                    console.log("error");
 
+                }, function(update){
+                    console.log("update");
+                });
             }, function(update) {
-//                console.log(update);
+                console.log(update);
             });
         }
 

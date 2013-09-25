@@ -31,3 +31,11 @@ if(isset($_REQUEST['action']) && $_REQUEST['action'] == 'save')
         echo 0;
     }
 }
+
+if(isset($_REQUEST['action']) && $_REQUEST['action'] == 'get')
+{
+    $db = new DB();
+    $result = $db->sendQuery("SELECT * FROM " . TABLE_WORKOUTS . " WHERE id = " . $_REQUEST['id'], "object");
+
+    echo $result->data;
+}

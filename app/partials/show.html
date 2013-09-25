@@ -1,5 +1,21 @@
 <div class="container">
-
-
-
+    <div style="padding-top:20px; padding-bottom: 20px"><button ng-click="changeView('generate')" class="btn btn-danger">Erstelle dein eigenes Workout!</button></div>
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Übung</th>
+                <th>Wiederholungen</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="exercise in exerciseList | limitTo:8" class="col-md-12">
+                <td>{{ $index + 1 }}</td>
+                <td>{{ exercise.exercisename }}</td>
+                <td>{{ exercise.reps }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
