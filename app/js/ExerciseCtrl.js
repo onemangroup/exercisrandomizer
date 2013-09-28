@@ -19,6 +19,7 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
             $scope.buttonState = "";
         }
         $scope.disablePostButton();
+
         $scope.loadedExercises = [];
         $scope.exerciseList = [];
         $scope.levels = [{level: "beginner", label: "Anfänger", range:"3-5"},

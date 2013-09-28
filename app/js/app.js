@@ -5,7 +5,7 @@
  Date: 17.09.2013
  */
 
-var app = angular.module('radomizerApp', ['Facebook']);
+var app = angular.module('radomizerApp', ['Facebook', 'randomizerFilters']);
 
 app.config([
     'FacebookProvider',

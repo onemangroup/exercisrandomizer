@@ -30,7 +30,9 @@
                 <tr ng-repeat="exercise in exerciseList | limitTo:8" class="col-md-12">
                     <td>{{ $index + 1 }}</td>
                     <td>{{ exercise.exercisename }}</td>
-                    <td>{{ exercise.reps }}</td>
+                    <td>
+                        <select ng-model="exercise.reps" ng-options="n for n in [] | range:1:100"></select>
+                    </td>
                 </tr>
             </tbody>
         </table>
