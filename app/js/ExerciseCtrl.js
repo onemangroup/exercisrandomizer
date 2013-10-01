@@ -22,22 +22,22 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
 
         $scope.loadedExercises = [];
         $scope.exerciseList = [];
-        $scope.levels = [{level: "beginner", label: "Anfänger", range:"3-5"},
-                        {level: "medium", label: "Fortgeschrittener", range:"6-12"},
-                        {level: "hard", label: "Profi", range:"13-20"}
+        $scope.levels = [{level: "beginner", label: "LEVEL_BEGINNER", range:"3-5"},
+                        {level: "medium", label: "LEVEL_INTERMEDIATE", range:"6-12"},
+                        {level: "hard", label: "LEVEL_PRO", range:"13-20"}
                        ];
         $scope.level = "beginner";
-        $scope.muscleGroups = [ {group:"chest", label: "Brust", state: false},
-                                {group:"back", label: "Rücken", state: false},
-                                {group:"biceps", label: "Bizeps", state: false},
-                                {group:"triceps", label: "Trizeps", state: false},
-                                {group:"shoulders", label: "Schulter", state: false},
-                                {group:"forearm", label: "Unterarm", state: false},
-                                {group:"abs", label: "Bauch / Core", state: false},
-                                {group:"upperleg", label: "Oberschenkel", state: false},
-                                {group:"glutes", label: "Pobacken", state: false},
-                                {group:"calves", label: "Waden", state: false},
-                                {group:"traps", label: "Nacken", state: false}]
+        $scope.muscleGroups = [ {group:"chest", label: "EXERCISE_CHEST", state: false},
+                                {group:"back", label: "EXERCISE_BACK", state: false},
+                                {group:"biceps", label: "EXERCISE_BICEPS", state: false},
+                                {group:"triceps", label: "EXERCISE_TRICEPS", state: false},
+                                {group:"shoulders", label: "EXERCISE_SHOULDER", state: false},
+                                {group:"forearm", label: "EXERCISE_FOREARM", state: false},
+                                {group:"abs", label: "EXERCISE_ABS", state: false},
+                                {group:"upperleg", label: "EXERCISE_LEGS", state: false},
+                                {group:"glutes", label: "EXERCISE_GLUTES", state: false},
+                                {group:"calves", label: "EXERCISE_CALVES", state: false},
+                                {group:"traps", label: "EXERCISE_TRAPS", state: false}]
 
         $http.get('data/data.json')
         .success
@@ -68,6 +68,8 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
                 }
             }
             )
+
+            console.log($scope.exerciseList.length);
             if($scope.exerciseList.length > 0)
             {
                 $scope.buttonState = "";
@@ -76,7 +78,7 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
             {
                 $scope.disablePostButton();
             }
-
+            console.log($scope.buttonState);
         }
 
         /**
@@ -93,9 +95,10 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
             }
         );
 
-        $scope.postWorkout = function()
+        $scope.postWorkout = function(url, title, descr, image, winWidth, winHeight)
         {
-            $scope.disablePostButton();
+            //$scope.disablePostButton();
+
             var promise = FacebookService.getUser();
             promise.then(function(success) {
                 console.log(success);
@@ -103,14 +106,15 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
                 if(postList.length > 8){
                     postList.splice(7, postList.length - 8);
                 }
-                var p2 = FacebookService.postStory(postList)
-                p2.then(function(s){
-                    $scope.enablePostButton();
-                }, function(e){
-                    $scope.enablePostButton();
-                }, function(u){
-                    $scope.enablePostButton();
-                });
+                FacebookService.postStorySharer(postList, url, title, descr, image, winWidth, winHeight);
+                //var p2 = FacebookService.postStory(postList)
+//                p2.then(function(s){
+//                    $scope.enablePostButton();
+//                }, function(e){
+//                    $scope.enablePostButton();
+//                }, function(u){
+//                    $scope.enablePostButton();
+//                });
             }, function(error) {
                 var p3 = FacebookService.loginUser();
                 p3.then(function(success){

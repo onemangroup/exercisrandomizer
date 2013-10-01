@@ -5,7 +5,7 @@
  Date: 17.09.2013
  */
 
-var app = angular.module('radomizerApp', ['Facebook', 'randomizerFilters']);
+var app = angular.module('radomizerApp', ['Facebook', 'randomizerFilters', 'pascalprecht.translate', 'ui']);
 
 app.config([
     'FacebookProvider',
@@ -28,8 +28,16 @@ app.config(['$routeProvider', function($routeProvider) {
         when('/generate', {templateUrl: 'partials/generate.html',   controller: 'ExerciseCtrl'}).
         when('/show/:id', {templateUrl: 'partials/show.html', controller: 'ExerciseDetailCtrl'}).
         otherwise({redirectTo: '/generate'});
-}]);
+}])
 
+app.config(['$translateProvider', function ($translateProvider, $rootScope) {
+    $translateProvider.useStaticFilesLoader({
+        prefix: 'data/locale-',
+        suffix: '.json'
+    });
+
+    $translateProvider.preferredLanguage('de_DE');
+}]);
 
 // Declare app level module which depends on filters, and services
 

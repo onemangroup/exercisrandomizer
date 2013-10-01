@@ -3,11 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Street Workout NRW - Workout Routine Generator v0.1</title>
+    <meta name="title" content="Street Workout NRW - Workout Routine Generator" />
+    <meta name="description" content="No Games, Just Pull Ups!" />
+    <link rel="image_src" type="image/jpeg" href="http://grenz-schutz.de/img/thumb_116x116.jpg" />
+    <title>Street Workout NRW - Workout Routine Generator</title>
     <link href="css/app.css" rel="stylesheet" />
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
     <link href="css/social-buttons.css" rel="stylesheet" media="screen" />
-    <link href="css/font-awesome.css"rel="stylesheet" media="screen" />
+    <link href="css/font-awesome.min.css"rel="stylesheet" media="screen" />
 </head>
 <body>
  <script type="text/javascript">
@@ -46,45 +49,60 @@
     }(document, 'script', 'facebook-jssdk'));
 
 
-
     //window.location.href = 'https://ssl.webpack.de/grenz-schutz.de/#/show/' + i;
 </script>
 
-    <div class="container">
-        <div class="row">
-            <image class="col-md-4 col-xs-4" src="img/logo.jpg" />
-            <div>
-                <div><h3>Support Us!</h3></div>
-                <div class="btn-group col-lg-8">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <a href="http://street-workout-nrw.spreadshirt.de/" target="_blank"><img src="http://cache.spreadshirt.net/Public/Common/images/logo_landscape.png" /></a>
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="2CHTK9X8FM6F2">
-                        <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
-                    </form>
+
+    <div ng-controller="AppCtrl">
+        <div class="container" style="padding-bottom: 5px;">
+            <div class="row">
+                <a href="https://www.facebook.com/CalisthenicsDuesseldorfNrw" target="_blank"><image class="col-md-4 col-xs-4" src="img/logo.jpg" /></a>
+                <div style="height: 15px; padding-bottom: 0; margin-top: 0;">
+                    <button class="btn btn-danger" ng-click="changeLanguage('de_DE')" translate>LANG_DE</button>
+                    <button class="btn btn-danger" ng-click="changeLanguage('en_US')" translate>LANG_EN</button>
+                </div>
+                <div>
+                    <div><h3 translate>HEADLINE</h3></div>
+                    <div class="btn-group col-lg-8">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <a href="https://www.facebook.com/CalisthenicsDuesseldorfNrw" target="_blank" class="btn btn-facebook"><i class="icon-facebook"></i> | {{ 'FACEBOOK_LINK' | translate }}</a>
+                            <a href="http://street-workout-nrw.spreadshirt.de/" target="_blank"><img src="http://cache.spreadshirt.net/Public/Common/images/logo_landscape.png" /></a>
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="2CHTK9X8FM6F2">
+                            <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div ng-view></div>
 
-    <div ng-controller="AppCtrl">
-        <script type="text/javascript">
-            <?php
-            if(isset($_GET['sk']))
-            {
-                $v = explode('/', $_GET['sk']);
-                echo 'var i =' . $v[1] . ";";
-            }
-            ?>
-        </script>
+
+
+            <script type="text/javascript">
+                <?php
+                if(isset($_GET['sk']))
+                {
+                    $v = explode('/', $_GET['sk']);
+                    echo 'var i =' . $v[1] . ";";
+                }
+                ?>
+            </script>
     </div>
+
+    <div ng-view></div>
 
     <!-- In production use:
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.js"></script>
     <script src="lib/angular/angular.js"></script>
+    <script src="js/angular-ui.js"></script>
+    <script src="js/angular-translate.js"></script>
+    <script src="js/angular-translate-loader-static-files.js"></script>
+
+
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
     <script src="js/AppCtrl.js"></script>
@@ -92,7 +110,6 @@
     <script src="js/ExerciseDetailCtrl.js"></script>
     <script src="js/filters.js"></script>
     <script src="js/directives.js"></script>
-    <script src="js/bootstrap.js"></script>
     <script src="js/facebook.js"></script>
  <script>
      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

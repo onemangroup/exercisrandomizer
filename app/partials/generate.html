@@ -2,31 +2,32 @@
 
     <div class="row hidden-print" data-toggle="buttons">
         <label ng-repeat="l in levels" class="btn btn-warning col-md-12 col-xs-12" ng-class="radioButtonState(l)">
-            <input type="radio" ng-model="$parent.level" value="{{ l.level }}" ng-click="filterExercises()"> {{ l.label }}
+            <input type="radio" ng-model="$parent.level" value="{{ l.level }}" ng-click="filterExercises()"> {{ l.label | translate}}
         </label>
     </div>
 
     <div class="row hidden-print" data-toggle="buttons">
         <label class="btn btn-primary col-md-12 col-xs-12" ng-class="checkboxState(muscleGroup)" ng-repeat="muscleGroup in muscleGroups">
-            <input type="checkbox" ng-click="filterExercises()" ng-model="muscleGroup.state"> {{ muscleGroup.label }}
+            <input type="checkbox" ng-click="filterExercises()" ng-model="muscleGroup.state"> {{ muscleGroup.label | translate}}
         </label>
     </div>
     <!--button ng-click="getExercises()" class="btn btn-primary">load this sh*t!</button-->
     <div class="row hidden-print">
-        <button ng-click="filterExercises()" class="btn btn-success col-md-3">randomize this sh*t!</button>
-        <button class="btn btn-facebook" ng-click="postWorkout();" disabled="{{ buttonState }}"><i class="icon-facebook"></i> | Share your Workout</button>
+        <button ng-click="filterExercises()" class="btn btn-success col-md-3" translate>RANDOMIZE</button>
+        <!--<button class="btn btn-facebook" ng-click="postWorkout();" disabled="{{ buttonState }}"><i class="icon-facebook"></i> | Share your Workout</button>-->
+        <button ng-disabled="buttonState" class="btn btn-facebook" ng-click="postWorkout('https://apps.facebook.com/workoutgenerator/?sk=691726554190169/', 'Workout Generator - Street Workout Duesseldorf', 'No Games, Just Pull Ups!', 'http://grenz-schutz.de/img/thumb_116x116.jpg', 520, 350)"><i class="icon-facebook"></i> | {{ 'SHARE' | translate }}</button>
     </div>
 
     <div class="row">
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Übung</th>
-                    <th>Wiederholungen</th>
+                    <th translate>ID</th>
+                    <th translate>EXERCISE</th>
+                    <th translate>REPS</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody ui-sortable ng-model="exerciseList">
                 <tr ng-repeat="exercise in exerciseList | limitTo:8" class="col-md-12">
                     <td>{{ $index + 1 }}</td>
                     <td>{{ exercise.exercisename }}</td>

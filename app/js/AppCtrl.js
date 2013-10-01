@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-app.controller('AppCtrl', function($scope, $http, FacebookService, Facebook, $routeParams, $location, $window, $document)
+app.controller('AppCtrl', function($scope, $rootScope, $http, $log, $location, $window, $document, $translate)
 {
     $scope.$watch($scope, function() {
         console.log($window.i);
@@ -15,4 +15,11 @@ app.controller('AppCtrl', function($scope, $http, FacebookService, Facebook, $ro
             $location.path('show/' + $window.i);
         }
     }, true);
+
+
+    $scope.changeLanguage = function(lang)
+    {
+        $log.info(lang);
+        $translate.uses(lang);
+    }
 })

@@ -51,6 +51,27 @@ app.service('FacebookService', function($q, $rootScope, $http, $window, $documen
             return deferred.promise;
         },
 
+        postStorySharer: function(exerciseList, url, title, descr, image, winWidth, winHeight){
+            console.log("postStory");
+            var d = $q.defer();
+
+            $http({
+                url: 'https://ssl.webpack.de/grenz-schutz.de/php/dbService.php',
+                method: 'POST',
+                params: {action: "save", userid: $rootScope.user.id, name: $rootScope.user.name, json: exerciseList},
+                headers: {'Content-Type': 'application/json'}
+            }).
+                success(function(data) {
+                    var winTop = (screen.height / 2) - (winHeight / 2);
+                    var winLeft = (screen.width / 2) - (winWidth / 2);
+                    var newURL = 'http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + encodeURIComponent(url + data) + '&p[images][0]=' + image;
+                    console.log(newURL);
+                    $window.open(newURL, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight)
+                }
+            );
+            return d.promise;
+        },
+
         postStory: function(exerciseList){
             console.log("postStory");
             var d = $q.defer();
