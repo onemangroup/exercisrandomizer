@@ -5,7 +5,15 @@
  Date: 17.09.2013
  */
 
-var app = angular.module('radomizerApp', ['Facebook', 'randomizerFilters', 'pascalprecht.translate', 'ui']);
+var app = angular.module('radomizerApp', ['Facebook', 'randomizerFilters', 'pascalprecht.translate', 'ui', 'ui.sortable', 'ui.bootstrap']);
+
+angular.module('ui.sortable').value('uiSortableConfig', {
+    sortable: {
+        connectWith: '.column',
+        update: 'itemsChanged',
+        cursor: 'move'
+    }
+});
 
 app.config([
     'FacebookProvider',
