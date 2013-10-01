@@ -15,7 +15,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": " "
     },
     {
         "id": 2,
@@ -249,7 +250,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "regular_pullup_a.gif"
     },
     {
         "id": 15,
@@ -411,7 +413,8 @@
         "traps": "x",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "dips_a.gif"
     },
     {
         "id": 24,

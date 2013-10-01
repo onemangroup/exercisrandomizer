@@ -1,6 +1,8 @@
 {
-    "HEADLINE": "Powered by Street Workout Düsseldorf - Unterstützt uns!",
+    "HEADLINE": "Powered by<br/>Street Workout Düsseldorf",
+    "HEADLINE02": "Unterstützt uns!",
     "FACEBOOK_LINK": "Besuch uns!",
+    "HOMEPAGE_LINK": "Zur Homepage",
     "LEVEL_BEGINNER": "Anfänger",
     "LEVEL_INTERMEDIATE": "Fortgeschrittener",
     "LEVEL_PRO": "Profi",
@@ -22,5 +24,9 @@
     "REPS": "Wiederholungen / Sek.",
     "LANG_DE": "deutsch",
     "LANG_EN": "englisch",
-    "CREATE_WORKOUT": "Erstelle dein eigenes Workout!"
+    "CREATE_WORKOUT": "Erstelle dein eigenes Workout!",
+    "PREVIEW_IMAGE": "Vorschau",
+    "SELECT_LEVEL": "Level auswählen:",
+    "SELECT_MUSCLEGROUP": "Muskelgruppe auswählen (Mehrfachauswahl möglich):",
+    "MORE_OPTIONS": "Weitere Optionen:"
 }

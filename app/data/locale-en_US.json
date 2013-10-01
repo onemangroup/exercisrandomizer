@@ -1,6 +1,8 @@
 {
-    "HEADLINE": "Powered by Street Workout Düsseldorf - Support Us!",
+    "HEADLINE": "Powered by Street Workout Düsseldorf",
+    "HEADLINE02": "Support Us!",
     "FACEBOOK_LINK": "Visit us!",
+    "HOMEPAGE_LINK": "Homepage",
     "LEVEL_BEGINNER": "Beginner",
     "LEVEL_INTERMEDIATE": "Intermediate",
     "LEVEL_PRO": "Pro",
@@ -11,7 +13,7 @@
     "EXERCISE_SHOULDER": "Shoulder",
     "EXERCISE_FOREARM": "Forearm",
     "EXERCISE_ABS": "Abs / Core",
-    "EXERCISE_LEGS": "Upper Leh",
+    "EXERCISE_LEGS": "Upper Leg",
     "EXERCISE_GLUTES": "Glutes",
     "EXERCISE_CALVES": "Calves",
     "EXERCISE_TRAPS": "Traps",
@@ -22,5 +24,9 @@
     "REPS": "Reps / Sec.",
     "LANG_DE": "german",
     "LANG_EN": "english",
-    "CREATE_WORKOUT": "Create ur own workout!"
+    "CREATE_WORKOUT": "Create ur own workout!",
+    "PREVIEW_IMAGE": "Preview",
+    "SELECT_LEVEL": "Select level:",
+    "SELECT_MUSCLEGROUP": "Select musclegroup (multiple selection possible):",
+    "MORE_OPTIONS": "Further options:"
 }

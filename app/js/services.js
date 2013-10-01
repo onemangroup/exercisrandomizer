@@ -5,7 +5,7 @@
 
 // Demonstrate how to register services
 // In this case it is a simple value service.
-app.service('FacebookService', function($q, $rootScope, $http, $window, $document, Facebook) {
+app.service('FacebookService', function($q, $rootScope, $http, $window, $document, Facebook, $location) {
     var deferred = $q.defer();
 
     return {
@@ -56,7 +56,7 @@ app.service('FacebookService', function($q, $rootScope, $http, $window, $documen
             var d = $q.defer();
 
             $http({
-                url: 'https://ssl.webpack.de/grenz-schutz.de/php/dbService.php',
+                url: $rootScope.absUrl + 'php/dbService.php',
                 method: 'POST',
                 params: {action: "save", userid: $rootScope.user.id, name: $rootScope.user.name, json: exerciseList},
                 headers: {'Content-Type': 'application/json'}
@@ -77,7 +77,7 @@ app.service('FacebookService', function($q, $rootScope, $http, $window, $documen
             var d = $q.defer();
 
             $http({
-                url: 'https://ssl.webpack.de/grenz-schutz.de/php/dbService.php',
+                url: $rootScope.absUrl + 'php/dbService.php',
                 method: 'POST',
                 params: {action: "save", userid: $rootScope.user.id, name: $rootScope.user.name, json: exerciseList},
                 headers: {'Content-Type': 'application/json'}
@@ -125,7 +125,7 @@ app.service('FacebookService', function($q, $rootScope, $http, $window, $documen
             var d = $q.defer();
 
             $http({
-                url: 'https://ssl.webpack.de/grenz-schutz.de/php/dbService.php',
+                url: $rootScope.absUrl + '/php/dbService.php',
                 method: 'POST',
                 params: {action: "get", id: id},
                 headers: {'Content-Type': 'application/json'}

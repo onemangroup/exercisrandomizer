@@ -15,4 +15,4 @@ define('DB_PASS', 'b0zzm0d3');
 define('PRAEFIX', '');
 
 /* Table definition */
-define('TABLE_WORKOUTS', 'workoutgenerator');
+define('TABLE_WORKOUTS', 'workoutgenerator_dev');

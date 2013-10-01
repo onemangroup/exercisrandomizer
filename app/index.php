@@ -2,6 +2,7 @@
 <html lang="en" ng-app="radomizerApp">
 <head>
     <meta charset="utf-8">
+    <meta name="fragment" content="!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Street Workout NRW - Workout Routine Generator" />
     <meta name="description" content="No Games, Just Pull Ups!" />
@@ -56,26 +57,41 @@
     <div ng-controller="AppCtrl">
         <div class="container" style="padding-bottom: 5px;">
             <div class="row">
-                <a href="https://www.facebook.com/CalisthenicsDuesseldorfNrw" target="_blank"><image class="col-md-4 col-xs-4" src="img/logo.jpg" /></a>
-                <div style="height: 15px; padding-bottom: 0; margin-top: 0;">
-                    <button class="btn btn-danger" ng-click="changeLanguage('de_DE')" translate>LANG_DE</button>
-                    <button class="btn btn-danger" ng-click="changeLanguage('en_US')" translate>LANG_EN</button>
+                <div class="pull-left" style="padding-right: 20px;">
+                    <a href="https://www.facebook.com/CalisthenicsDuesseldorfNrw" target="_blank">
+                        <image class="col-xs-8 col-sm-12" src="img/logo.jpg" />
+                    </a>
+                    <h4 translate>HEADLINE</h4>
                 </div>
-                <div>
-                    <div><h3 translate>HEADLINE</h3></div>
-                    <div class="btn-group col-lg-8">
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <a href="https://www.facebook.com/CalisthenicsDuesseldorfNrw" target="_blank" class="btn btn-facebook"><i class="icon-facebook"></i> | {{ 'FACEBOOK_LINK' | translate }}</a>
-                            <a href="http://street-workout-nrw.spreadshirt.de/" target="_blank"><img src="http://cache.spreadshirt.net/Public/Common/images/logo_landscape.png" /></a>
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="2CHTK9X8FM6F2">
-                            <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
-                        </form>
+                <div class="pull-left">
+                    <div>
+                        <a href="https://www.facebook.com/CalisthenicsDuesseldorfNrw" target="_blank" class="btn btn-facebook"><i class="icon-facebook"></i> | {{ 'FACEBOOK_LINK' | translate }}</a>
+                        <a href="http://street-workout-nrw.de/" target="_blank" class="btn btn-facebook"><i class="icon-home"></i> | {{ 'HOMEPAGE_LINK' | translate }}</a>
+                    </div>
+                    <div class="col-xs-12">
+                        <h3 translate>HEADLINE02</h3>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="btn-group">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <a href="http://street-workout-nrw.spreadshirt.de/" target="_blank"><img src="http://cache.spreadshirt.net/Public/Common/images/logo_landscape.png" /></a>
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="2CHTK9X8FM6F2">
+                                <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="pull-right">
+                <div style="padding-bottom: 0; margin-top: 0;">
+                    <button class="btn btn-danger" ng-click="changeLanguage('de_DE')" translate>LANG_DE</button>
+                    <button class="btn btn-danger" ng-click="changeLanguage('en_US')" translate>LANG_EN</button>
+                </div>
+            </div>
         </div>
+            <hr />
 
 
 
@@ -97,10 +113,13 @@
     -->
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.js"></script>
-    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
     <script src="js/angular-ui.js"></script>
-    <script src="js/angular-translate.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+    <script src="js/angular-translate.min.js"></script>
     <script src="js/angular-translate-loader-static-files.js"></script>
+    <script src="https://rawgithub.com/angular-ui/ui-sortable/master/src/sortable.js"></script>
+    <script src="https://rawgithub.com/mostr/angular-ui-multi-sortable/master/multiSortable.js"></script>
 
 
     <script src="js/app.js"></script>
