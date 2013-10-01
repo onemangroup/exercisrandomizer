@@ -16,7 +16,7 @@
         "beginner": "x",
         "medium": "x",
         "hard": "x",
-        "image": " "
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 2,
@@ -34,7 +34,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 3,
@@ -52,7 +53,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 4,
@@ -70,7 +72,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 5,
@@ -88,7 +91,8 @@
         "traps": "x",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 6,
@@ -106,7 +110,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 7,
@@ -124,7 +129,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 8,
@@ -142,7 +148,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 9,
@@ -160,7 +167,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 10,
@@ -178,7 +186,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 11,
@@ -196,7 +205,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 12,
@@ -214,7 +224,8 @@
         "traps": "x",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 13,
@@ -232,7 +243,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 14,
@@ -251,7 +263,7 @@
         "beginner": "x",
         "medium": "x",
         "hard": "x",
-        "image": "regular_pullup_a.gif"
+        "image": "img/exercises/regular_pullup_a.gif"
     },
     {
         "id": 15,
@@ -269,7 +281,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 16,
@@ -287,7 +300,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 17,
@@ -305,7 +319,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 18,
@@ -323,7 +338,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 19,
@@ -341,7 +357,8 @@
         "traps": "x",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 20,
@@ -359,7 +376,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 21,
@@ -377,7 +395,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 22,
@@ -395,7 +414,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 23,
@@ -414,7 +434,7 @@
         "beginner": "x",
         "medium": "x",
         "hard": "x",
-        "image": "dips_a.gif"
+        "image": "img/exercises/dips_a.gif"
     },
     {
         "id": 24,
@@ -432,7 +452,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 25,
@@ -450,7 +471,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 26,
@@ -468,7 +490,8 @@
         "traps": "x",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 27,
@@ -486,7 +509,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 28,
@@ -504,7 +528,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "-",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 29,
@@ -522,7 +547,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "-",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 30,
@@ -540,7 +566,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 31,
@@ -558,7 +585,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "-",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 32,
@@ -576,7 +604,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "-",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 33,
@@ -594,7 +623,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "-",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 34,
@@ -612,7 +642,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "-",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 35,
@@ -630,7 +661,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 36,
@@ -648,7 +680,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 37,
@@ -666,7 +699,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "-",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 38,
@@ -684,7 +718,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "-",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 39,
@@ -702,7 +737,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "-",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 40,
@@ -720,7 +756,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "-",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 41,
@@ -738,7 +775,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 42,
@@ -756,7 +794,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 43,
@@ -774,7 +813,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 44,
@@ -792,7 +832,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 45,
@@ -810,7 +851,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 46,
@@ -828,7 +870,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 47,
@@ -846,7 +889,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 48,
@@ -864,7 +908,8 @@
         "traps": "-",
         "beginner": "x",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 49,
@@ -882,7 +927,8 @@
         "traps": "-",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 50,
@@ -900,7 +946,8 @@
         "traps": "x",
         "beginner": "-",
         "medium": "x",
-        "hard": "x"
+        "hard": "x",
+        "image": "http://dummyimage.com/160x250/ffffff/000000.jpg&text=no+image+available"
     },
     {
         "id": 51,

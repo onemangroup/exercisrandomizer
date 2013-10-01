@@ -61,7 +61,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="12" selection-start="4837" selection-end="4843" vertical-scroll-proportion="-17.541666">
+            <state line="117" column="19" selection-start="5523" selection-end="5523" vertical-scroll-proportion="-38.791668">
               <folding />
             </state>
           </provider>
@@ -112,19 +112,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generate.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="generate.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/partials/generate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="20" selection-start="1071" selection-end="1071" vertical-scroll-proportion="-15.625">
+            <state line="54" column="59" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.8086696">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="locale-en_US.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="data.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/data/data.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="969" column="1" selection-start="24565" selection-end="24565" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="locale-en_US.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/data/locale-en_US.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="50" selection-start="525" selection-end="525" vertical-scroll-proportion="0.30906594">
+            <state line="15" column="50" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,12 +159,12 @@
         <option value="$PROJECT_DIR$/app/js/ExerciseCtrl.js" />
         <option value="$PROJECT_DIR$/app/js/app.js" />
         <option value="$PROJECT_DIR$/app/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/app/data/data.json" />
         <option value="$PROJECT_DIR$/app/css/app.css" />
-        <option value="$PROJECT_DIR$/app/index.php" />
         <option value="$PROJECT_DIR$/app/data/locale-de_DE.json" />
-        <option value="$PROJECT_DIR$/app/partials/generate.html" />
         <option value="$PROJECT_DIR$/app/data/locale-en_US.json" />
+        <option value="$PROJECT_DIR$/app/index.php" />
+        <option value="$PROJECT_DIR$/app/data/data.json" />
+        <option value="$PROJECT_DIR$/app/partials/generate.html" />
       </list>
     </option>
   </component>
@@ -723,23 +732,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/data/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="922" column="1" selection-start="20143" selection-end="20143" vertical-scroll-proportion="0.87637365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/angular-ui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="66" selection-start="192" selection-end="192" vertical-scroll-proportion="0.14685315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="12" selection-start="4837" selection-end="4843" vertical-scroll-proportion="-17.541666">
           <folding />
         </state>
       </provider>
@@ -758,16 +753,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/generate.html">
+    <entry file="file://$PROJECT_DIR$/app/data/locale-en_US.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="1071" selection-end="1071" vertical-scroll-proportion="-15.625">
+        <state line="15" column="50" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/data/locale-en_US.json">
+    <entry file="file://$PROJECT_DIR$/app/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="50" selection-start="525" selection-end="525" vertical-scroll-proportion="0.30906594">
+        <state line="117" column="19" selection-start="5523" selection-end="5523" vertical-scroll-proportion="-38.791668">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/data/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="969" column="1" selection-start="24565" selection-end="24565" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/generate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="59" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.8086696">
           <folding />
         </state>
       </provider>

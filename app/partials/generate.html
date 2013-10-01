@@ -27,7 +27,7 @@
         <h5 translate>MORE_OPTIONS</h5>
     </div>
     <div class="row hidden-print">
-        <button ng-click="filterExercises()" class="btn btn-success col-md-3" translate>RANDOMIZE</button>
+        <button ng-click="filterExercises()" class="btn btn-success" translate>RANDOMIZE</button>
         <!--<button class="btn btn-facebook" ng-click="postWorkout();" disabled="{{ buttonState }}"><i class="icon-facebook"></i> | Share your Workout</button>-->
         <button ng-disabled="buttonState" class="btn btn-facebook" ng-click="postWorkout('https://apps.facebook.com/workoutgenerator/?sk=691726554190169/', 'Workout Generator - Street Workout Duesseldorf', 'No Games, Just Pull Ups!', 'http://grenz-schutz.de/img/thumb_116x116.jpg', 520, 350)"><i class="icon-facebook"></i> | {{ 'SHARE' | translate }}</button>
     </div>
@@ -39,7 +39,7 @@
                 <th translate>ID</th>
                 <th translate>EXERCISE</th>
                 <th translate>REPS</th>
-                <th translate>IMAGE</th>
+                <th translate>PREVIEW_IMAGE</th>
             </tr>
             </thead>
             <tbody ui-multi-sortable class="column" ng-model="exerciseList">
@@ -52,7 +52,7 @@
                 <td>
                     <div class="dropdown">
                         <a class="dropdown-toggle" translate>PREVIEW_IMAGE</a>
-                        <img class="dropdown-menu" ng-src="img/exercises/{{ exercise.image }}" />
+                        <img class="dropdown-menu" ng-src="{{ exercise.image }}" />
                     </div>
                 </td>
             </tr>
