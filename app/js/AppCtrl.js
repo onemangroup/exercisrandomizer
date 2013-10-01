@@ -10,6 +10,7 @@ app.controller('AppCtrl', function($scope, $rootScope, $http, $log, $location, $
 {
     $scope.$watch($scope, function() {
         console.log($window.i);
+        $rootScope.absUrl = $location.absUrl().replace(window.location.hash, "");
         if($window.i != undefined)
         {
             $location.path('show/' + $window.i);

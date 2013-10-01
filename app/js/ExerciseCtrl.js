@@ -64,7 +64,7 @@ app.controller('ExerciseCtrl', function($scope, $http, orderByFilter, FacebookSe
                 {
                     var range = $scope.getRangeForLevel().split("-");
                     var rep = getRandomArbitrary(Number(range[0]), Number(range[1]));
-                    $scope.exerciseList.push({exercisename: value.exercisename, reps: rep});
+                    $scope.exerciseList.push({exercisename: value.exercisename, reps: rep, image: value.image});
                 }
             }
             )
