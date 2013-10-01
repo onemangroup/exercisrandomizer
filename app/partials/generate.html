@@ -1,17 +1,31 @@
-<div class="container">
-
+<div class="container" style="padding-bottom: 8px;">
+    <div class="row">
+        <h5 translate>SELECT_LEVEL</h5>
+    </div>
     <div class="row hidden-print" data-toggle="buttons">
         <label ng-repeat="l in levels" class="btn btn-warning col-md-12 col-xs-12" ng-class="radioButtonState(l)">
             <input type="radio" ng-model="$parent.level" value="{{ l.level }}" ng-click="filterExercises()"> {{ l.label | translate}}
         </label>
     </div>
 
+    <div class="row" style="padding-top: 15px;">
+        <h5 translate>SELECT_MUSCLEGROUP</h5>
+    </div>
     <div class="row hidden-print" data-toggle="buttons">
         <label class="btn btn-primary col-md-12 col-xs-12" ng-class="checkboxState(muscleGroup)" ng-repeat="muscleGroup in muscleGroups">
             <input type="checkbox" ng-click="filterExercises()" ng-model="muscleGroup.state"> {{ muscleGroup.label | translate}}
         </label>
     </div>
+
+</div>
+
+<hr/>
+
+<div class="container">
     <!--button ng-click="getExercises()" class="btn btn-primary">load this sh*t!</button-->
+    <div class="row">
+        <h5 translate>MORE_OPTIONS</h5>
+    </div>
     <div class="row hidden-print">
         <button ng-click="filterExercises()" class="btn btn-success col-md-3" translate>RANDOMIZE</button>
         <!--<button class="btn btn-facebook" ng-click="postWorkout();" disabled="{{ buttonState }}"><i class="icon-facebook"></i> | Share your Workout</button>-->
@@ -21,20 +35,27 @@
     <div class="row">
         <table class="table table-striped">
             <thead>
-                <tr>
-                    <th translate>ID</th>
-                    <th translate>EXERCISE</th>
-                    <th translate>REPS</th>
-                </tr>
+            <tr>
+                <th translate>ID</th>
+                <th translate>EXERCISE</th>
+                <th translate>REPS</th>
+                <th translate>IMAGE</th>
+            </tr>
             </thead>
-            <tbody ui-sortable ng-model="exerciseList">
-                <tr ng-repeat="exercise in exerciseList | limitTo:8" class="col-md-12">
-                    <td>{{ $index + 1 }}</td>
-                    <td>{{ exercise.exercisename }}</td>
-                    <td>
-                        <select ng-model="exercise.reps" ng-options="n for n in [] | range:1:100"></select>
-                    </td>
-                </tr>
+            <tbody ui-multi-sortable class="column" ng-model="exerciseList">
+            <tr ng-repeat="exercise in exerciseList | limitTo:8" class="col-md-12">
+                <td>{{ $index + 1 }}</td>
+                <td>{{ exercise.exercisename }}</td>
+                <td>
+                    <select ng-model="exercise.reps" ng-options="n for n in [] | range:1:100"></select>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" translate>PREVIEW_IMAGE</a>
+                        <img class="dropdown-menu" ng-src="img/exercises/{{ exercise.image }}" />
+                    </div>
+                </td>
+            </tr>
             </tbody>
         </table>
     </div>
