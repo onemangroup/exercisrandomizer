@@ -115,11 +115,11 @@
     <script src="js/jquery-ui-1.10.3.custom.js"></script>
     <script src="lib/angular/angular.min.js"></script>
     <script src="js/angular-ui.js"></script>
-    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.6.0.js"></script>
     <script src="js/angular-translate.min.js"></script>
     <script src="js/angular-translate-loader-static-files.js"></script>
-    <script src="https://rawgithub.com/angular-ui/ui-sortable/master/src/sortable.js"></script>
-    <script src="https://rawgithub.com/mostr/angular-ui-multi-sortable/master/multiSortable.js"></script>
+    <script src="js/sortable.js"></script>
+    <script src="js/multiSortable.js"></script>
 
 
     <script src="js/app.js"></script>
