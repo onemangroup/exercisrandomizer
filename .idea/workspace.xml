@@ -58,10 +58,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="19" selection-start="5523" selection-end="5523" vertical-scroll-proportion="-38.791668">
+            <state line="119" column="48" selection-start="5613" selection-end="5613" vertical-scroll-proportion="0.4005979">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ui-bootstrap-tpls-0.6.0.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/ui-bootstrap-tpls-0.6.0.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="53799" selection-start="53693" selection-end="53693" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-ui-1.10.3.custom.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/jquery-ui-1.10.3.custom.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="44723" selection-start="44723" selection-end="44723" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,15 +89,6 @@
         <entry file="file://$PROJECT_DIR$/app/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="20" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="136" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,34 +115,16 @@
       <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="42" selection-start="3189" selection-end="3189" vertical-scroll-proportion="0.0">
+            <state line="65" column="76" selection-start="2547" selection-end="2547" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generate.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="generate.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/generate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="59" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.8086696">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/data/data.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="969" column="1" selection-start="24565" selection-end="24565" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="locale-en_US.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/data/locale-en_US.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="50" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
+            <state line="44" column="19" selection-start="2124" selection-end="2141" vertical-scroll-proportion="-17.083334">
               <folding />
             </state>
           </provider>
@@ -149,22 +140,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/partials/sharer.html" />
-        <option value="$PROJECT_DIR$/app/js/SharerModalCtrl.js" />
-        <option value="$PROJECT_DIR$/app/data/locale_de.json" />
-        <option value="$PROJECT_DIR$/app/partials/show.html" />
-        <option value="$PROJECT_DIR$/app/php/dbconfig.php" />
-        <option value="$PROJECT_DIR$/app/js/AppCtrl.js" />
         <option value="$PROJECT_DIR$/app/js/services.js" />
         <option value="$PROJECT_DIR$/app/js/ExerciseCtrl.js" />
         <option value="$PROJECT_DIR$/app/js/app.js" />
         <option value="$PROJECT_DIR$/app/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/app/css/app.css" />
         <option value="$PROJECT_DIR$/app/data/locale-de_DE.json" />
-        <option value="$PROJECT_DIR$/app/data/locale-en_US.json" />
-        <option value="$PROJECT_DIR$/app/index.php" />
         <option value="$PROJECT_DIR$/app/data/data.json" />
         <option value="$PROJECT_DIR$/app/partials/generate.html" />
+        <option value="$PROJECT_DIR$/app/data/locale-en_US.json" />
+        <option value="$PROJECT_DIR$/app/privacy.html" />
+        <option value="$PROJECT_DIR$/app/terms.html" />
+        <option value="$PROJECT_DIR$/app/js/AppCtrl.js" />
+        <option value="$PROJECT_DIR$/app/php/dbconfig.php" />
+        <option value="$PROJECT_DIR$/app/js/jquery-ui-1.10.03.custom.min.js" />
+        <option value="$PROJECT_DIR$/app/js/ui-bootstrap-tpls-0.6.0.min.js" />
+        <option value="$PROJECT_DIR$/app/index.php" />
       </list>
     </option>
   </component>
@@ -303,101 +294,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercisrandomizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercisrandomizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercisrandomizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercisrandomizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercisrandomizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercisrandomizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercises" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercisrandomizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercisrandomizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="font" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercisrandomizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercisrandomizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -590,7 +487,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="22" width="1440" height="874" extended-state="6" />
+    <frame x="-1" y="22" width="1440" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -669,51 +566,79 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/php/dbconfig.php">
+    <entry file="file://$PROJECT_DIR$/app/data/locale-en_US.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="46" selection-start="402" selection-end="402" vertical-scroll-proportion="0.3611898">
+        <state line="5" column="51" selection-start="195" selection-end="195" vertical-scroll-proportion="0.10623229">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/angular-translate.min.js">
+    <entry file="file://$PROJECT_DIR$/app/data/data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="969" column="1" selection-start="24565" selection-end="24565" vertical-scroll-proportion="19.96566">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/angular/angular.js">
+    <entry file="file://$PROJECT_DIR$/app/terms.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="95" column="48" selection-start="4725" selection-end="4725" vertical-scroll-proportion="2.0622287">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/privacy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="60" selection-start="185" selection-end="185" vertical-scroll-proportion="0.08683068">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/AppCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
+        <state line="14" column="74" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/dbconfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="42" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/multiSortable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="42" selection-start="3189" selection-end="3189" vertical-scroll-proportion="0.0">
+        <state line="65" column="76" selection-start="2547" selection-end="2547" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/ExerciseDetailCtrl.js">
+    <entry file="file://$PROJECT_DIR$/app/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/ExerciseCtrl.js">
+    <entry file="file://$PROJECT_DIR$/app/partials/generate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="109" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.0">
+        <state line="44" column="19" selection-start="2124" selection-end="2141" vertical-scroll-proportion="-17.083334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/jquery-ui-1.10.3.custom.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="44723" selection-start="44723" selection-end="44723" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -725,58 +650,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/bootstrap.min.css">
+    <entry file="file://$PROJECT_DIR$/app/js/ui-bootstrap-tpls-0.6.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="41768" selection-start="41988" selection-end="41988" vertical-scroll-proportion="0.17991005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/angular-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="66" selection-start="192" selection-end="192" vertical-scroll-proportion="0.14685315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/data/locale-de_DE.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="1" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.6586402">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/data/locale-en_US.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="50" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
+        <state line="0" column="53799" selection-start="53693" selection-end="53693" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="19" selection-start="5523" selection-end="5523" vertical-scroll-proportion="-38.791668">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/data/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="969" column="1" selection-start="24565" selection-end="24565" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/generate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="59" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.8086696">
+        <state line="119" column="48" selection-start="5613" selection-end="5613" vertical-scroll-proportion="0.4005979">
           <folding />
         </state>
       </provider>

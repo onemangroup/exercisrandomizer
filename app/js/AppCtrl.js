@@ -10,7 +10,14 @@ app.controller('AppCtrl', function($scope, $rootScope, $http, $log, $location, $
 {
     $scope.$watch($scope, function() {
         console.log($window.i);
-        $rootScope.absUrl = $location.absUrl().replace(window.location.hash, "");
+        if(window.location.hash == "")
+        {
+            $rootScope.absUrl = "https://ssl.webpack.de/grenz-schutz.de/";
+        }else
+        {
+            $rootScope.absUrl = $location.absUrl().replace(window.location.hash, "");
+        }
+        console.log($rootScope.absUrl);
         if($window.i != undefined)
         {
             $location.path('show/' + $window.i);

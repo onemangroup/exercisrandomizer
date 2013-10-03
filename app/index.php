@@ -37,6 +37,8 @@
             cookie     : true,           // enable cookies to allow the server to access the session
             xfbml      : true            // parse page for xfbml or html5 social plugins like login button below
         });
+
+        FB.Canvas.setSize({ width: 780, height: 800 });
     };
 
 
@@ -112,10 +114,10 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     -->
     <script src="js/jquery-2.0.3.min.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="lib/angular/angular.min.js"></script>
     <script src="js/angular-ui.js"></script>
-    <script src="js/ui-bootstrap-tpls-0.6.0.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.6.0.min.js"></script>
     <script src="js/angular-translate.min.js"></script>
     <script src="js/angular-translate-loader-static-files.js"></script>
     <script src="js/sortable.js"></script>
